@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "DM Serif Display";
+  src: url("/assets/fonts/DMSerifDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/assets/fonts/PlusJakartaSans.woff2") format("woff2");
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* Warm off-white background */
+    --background: 0.98 0.012 85;
+    --foreground: 0.18 0.025 230;
+
+    /* Cards slightly whiter */
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.025 230;
+
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.025 230;
+
+    /* Deep teal primary */
+    --primary: 0.44 0.13 185;
+    --primary-foreground: 0.98 0 0;
+
+    /* Warm light secondary */
+    --secondary: 0.93 0.02 85;
+    --secondary-foreground: 0.25 0.04 185;
+
+    /* Muted */
+    --muted: 0.93 0.015 85;
+    --muted-foreground: 0.52 0.02 200;
+
+    /* Amber accent */
+    --accent: 0.82 0.13 75;
+    --accent-foreground: 0.18 0.04 75;
+
+    /* Destructive */
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    --border: 0.88 0.018 85;
+    --input: 0.88 0.018 85;
+    --ring: 0.44 0.13 185;
+
+    --chart-1: 0.44 0.13 185;
+    --chart-2: 0.7 0.14 75;
+    --chart-3: 0.55 0.18 150;
+    --chart-4: 0.65 0.15 50;
+    --chart-5: 0.48 0.12 260;
+
+    --sidebar: 0.98 0.012 85;
+    --sidebar-foreground: 0.18 0.025 230;
+    --sidebar-primary: 0.44 0.13 185;
+    --sidebar-primary-foreground: 0.98 0 0;
+    --sidebar-accent: 0.93 0.02 85;
+    --sidebar-accent-foreground: 0.25 0.04 185;
+    --sidebar-border: 0.88 0.018 85;
+    --sidebar-ring: 0.44 0.13 185;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+}
